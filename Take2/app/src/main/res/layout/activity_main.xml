@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AFF0"
+    tools:context="com.example.luzcamacho.loginpt2.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/skype" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:hint="Skype Name, email, or phone"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btArrow"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/arrow"
+        android:backgroundTint="#0C7DAF"
+        android:tint="#00AFF0" />
+
+    <Button
+        android:id="@+id/btCreatAcct"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="#0C7DAF"
+        android:text="Create account"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
